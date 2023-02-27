@@ -49,6 +49,7 @@ body{
   justify-content: space-between;
   gap: 20px;
   align-items: center;
+  align-self: flex-end;
   height: 100%;
 }
 
