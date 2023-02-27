@@ -1,0 +1,42 @@
+:root {
+  /* global variables */
+  --font-family: 'Inter', sans-serif;
+  --green: #00A878;
+  --orange: #FE5E41;
+  --light-gray: #F2F2F2;
+  --medium-gray: #DEDEDE;
+  --darkest-gray: #6E6E6E;
+  --semi-black: #1E1E1E;
+
+  /* header */
+  --nav-font-size: 18px;
+  --nav-font-weight: 600;
+  --nav-line-height: 24px;
+  --nav-letter-spacing: 0em;
+  --nav-color: #FFFFFF;
+  --nav-active-color: #1E1E1E;
+
+  /* breadcrumb */
+  --breadcrumb-font-style: normal;
+  --breadcrumb-font-weight: 400;
+  --breadcrumb-font-size: 13px;
+  --breadcrumb-line-height: 18px;
+
+  /* product */
+  --product-font-style: normal;
+  --product-font-size: 16px;
+
+  /* product header*/
+  --product-header-font-family: 'Poppins', sans-serif;
+  --product-header-font-style: normal;
+  --product-header-font-weight: 600;
+  --product-header-font-size: 40px;
+  --product-header-line-height: 48px;
+
+  /* description */
+  --product-stock-font-weight: 600;
+  --product-stock-line-height: 24px;
+  --product-description-font-weight: 400;
+  --product-description-font-size: 16px;
+  --product-description-line-height: 24px;
+}

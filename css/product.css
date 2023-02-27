@@ -1,0 +1,254 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.product-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem !important;
+}
+
+.product-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: var(--product-header-font-size);
+  font-weight: var(--product-header-font-weight);
+  font-style: var(--product-header-font-style);
+  line-height: var(--product-header-line-height);
+  font-family: var(--product-header-font-family);
+}
+
+.product-image {
+  width: 60%;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-info {
+  width: 40%;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--light-gray);
+  font-size: var(--product-font-size);
+  box-sizing: border-box;
+  padding: 2rem;
+  gap: 1rem; /* add gap between elements so we dont need to use margin on each element */
+}
+
+.product-info h1{
+  font-size: var(--product-font-size);
+  font-weight: var(--product-stock-font-weight);
+  margin: 0;
+}
+
+.product-info p{
+  margin: 0;
+}
+
+.product-dropdowns {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.product-dropdowns .dropdown {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.product-dropdowns .dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.product-dropdowns .dropdown-header h1{
+  font-size: 11px;
+  color: var(--darkest-gray);
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 0.5rem;;
+}
+
+.product-dropdowns .dropdown-header i{
+  font-size: 12px;
+  color: var(--darkest-gray);
+}
+
+.product-dropdowns .dropdown-header .dropdown-selected{
+  font-size: 14px;
+  color: var(--semi-black);
+  font-weight: 400;
+}
+
+.product-dropdowns .dropdown-body{
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+/* checkbox styling */
+.product-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+}
+
+.product-options .checkbox{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 0.2rem;
+}
+
+.product-options .checkbox input[type="checkbox"] {
+  display: none; /* hide the default checkbox */
+}
+
+.product-options .checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.5rem; /* space for the Font Awesome icon */
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.product-options .checkbox label i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+}
+
+.product-options .checkbox label i::before {
+  color: transparent; /* unchecked color */
+}
+
+.product-options .checkbox input[type="checkbox"]:checked + label i {
+  background-color: green; /* checked color */
+}
+
+.product-options .checkbox input[type="checkbox"]:checked + label i::before {
+  color: white !important; /* checked icon color */
+}
+/* we could do all of this with accent-color, but its not supported in safari browser */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color#browser_compatibility */
+/* end of checkbox styling */
+
+/* product-buttons */
+.product-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.product-buttons .product-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 140px;
+  height: 48px;
+  max-height: 48px;
+  background-color: var(--light-gray);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* clean button styling */
+.product-buttons .product-button button{
+  border-radius: 5px;
+  border: 1px solid var(--darkest-gray);
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  color: var(--darkest-gray);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-buttons .product-button-green button {
+  background-color: var(--green);
+  border: 1px solid white;
+  color: white;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  .product-header h1{
+    font-size: 28px;
+  }
+  .product-header .icons{
+    align-self: flex-end;
+  }
+
+  .product-dropdowns {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 50%;
+    min-height: 200px;
+  }
+
+  .product-info {
+    width: 100%;
+    height: auto;
+  }
+}

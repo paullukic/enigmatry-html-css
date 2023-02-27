@@ -1,0 +1,58 @@
+@import 'variables.css';
+@import 'navigation.css';
+@import 'hero.css';
+@import 'tabs.css';
+@import 'table-specs.css';
+@import 'modal.css';
+
+html, body{
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+
+body{
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  line-height: var(--line-height);
+  color: var(--color);
+}
+
+.color-orange{
+  color: var(--orange) !important;
+}
+
+.bg-green{
+  background-color: var(--green) !important;
+}
+
+.bg-light-gray{
+  background-color: var(--light-gray) !important;
+}
+
+.container{
+  max-width: 1200px;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 auto; /* center the container */
+
+  /* center stuff in the container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  height: 100%;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,42 @@
+.table-specs{
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start !important;
+  padding-bottom: 5rem !important;
+}
+
+.table-specs-container{
+  overflow-x: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.table-specs table{
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.table-specs table tr{
+  background-color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table-specs table tr th{
+  font-size: 14px;
+  color: var(--orange);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-gray);
+}
+
+.table-specs table tr td{
+  padding: 0.5rem 1rem;
+}
+
+/* every other row */
+.table-specs table tr:nth-child(2n){
+  background-color: var(--light-gray);
+}

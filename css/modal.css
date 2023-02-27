@@ -1,0 +1,129 @@
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  font-family: var(--font-family);
+}
+
+.modal-show{
+  display: flex !important;
+}
+
+.modal-content{
+  width: 100%;
+  max-width: 480px;
+}
+
+.modal-content form{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--semi-black);
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.modal-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h1{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.modal-body{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.modal-body p{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+}
+
+.modal-body .modal-input{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+
+}
+
+.modal-body input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--semi-black);
+}
+
+.modal-body .modal-input textarea{
+  height: 140px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--semi-black);
+}
+
+.modal-footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* clean button styling */
+.modal-footer button{
+  border-radius: 5px;
+  border: 1px solid var(--medium-gray);
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--orange);
+  height: 40px;
+}
+
+.modal-footer button#cancel{
+  background-color: transparent;
+  color: var(--orange);
+  border: none;
+}
